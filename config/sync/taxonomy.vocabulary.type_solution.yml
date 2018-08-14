@@ -1,0 +1,9 @@
+uuid: 03b6849e-8810-4ac5-9094-7911806fcfae
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Тип решения'
+vid: type_solution
+description: ''
+hierarchy: 0
+weight: 0

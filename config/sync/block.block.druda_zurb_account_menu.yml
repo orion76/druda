@@ -1,0 +1,26 @@
+uuid: 293124b1-5730-4bf2-903a-17e8b16422e9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: ASt1ZTBiXPXc97NNLFcfr1C7E0_y9NHqEz9wKi6cYwE
+id: druda_zurb_account_menu
+theme: druda_zurb
+region: meta_header_right
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

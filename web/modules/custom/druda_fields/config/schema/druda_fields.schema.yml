@@ -1,0 +1,7 @@
+field.formatter.settings.title_formatter:
+  type: mapping
+  label: 'Title formatter HTML Tag'
+  mapping:
+    html_tag:
+      type: string
+      label: 'HTML Tag'

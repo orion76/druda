@@ -1,0 +1,22 @@
+uuid: 58a42864-edc8-47fe-b911-e57f2a1add5b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: 7E8F_tBm4cEqi3QlwtUAkLUzy6oPDaeYvoHAAG5UGzA
+id: druda_zurb_content
+theme: druda_zurb
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

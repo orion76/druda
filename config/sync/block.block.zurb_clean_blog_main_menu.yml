@@ -1,0 +1,26 @@
+uuid: ee0d01e4-17f9-489f-bb9b-c3d3c9074dc5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: p2LQwYjqMLUN45VymY2c5BkEWBM6IytCcmyWzPvjdlY
+id: zurb_clean_blog_main_menu
+theme: zurb_clean_blog
+region: logo
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

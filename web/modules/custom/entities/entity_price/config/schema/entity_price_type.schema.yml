@@ -1,0 +1,12 @@
+entity_price.entity_price_type.*:
+  type: config_entity
+  label: 'Entity price type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

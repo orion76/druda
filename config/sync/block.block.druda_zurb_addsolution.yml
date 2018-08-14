@@ -1,0 +1,24 @@
+uuid: e1ed6e34-ab37-4069-9bc1-d307b4fe2874
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.add-solution
+  module:
+    - system
+  theme:
+    - druda_zurb
+id: druda_zurb_addsolution
+theme: druda_zurb
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:add-solution'
+settings:
+  id: 'system_menu_block:add-solution'
+  label: 'Добавить решение'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

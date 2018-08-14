@@ -1,0 +1,5 @@
+name: 'entity_price'
+type: module
+description: 'Entity Price'
+core: 8.x
+package: 'gpb'

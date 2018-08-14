@@ -1,0 +1,30 @@
+uuid: 92212782-f93c-4253-a232-1bda905f6beb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.solutions_catalog
+  module:
+    - system
+    - views
+  theme:
+    - druda_zurb
+id: druda_zurb_views_block__solutions_catalog_block_1
+theme: druda_zurb
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:solutions_catalog-block_1'
+settings:
+  id: 'views_block:solutions_catalog-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: 1bb58a05-a918-4e70-bdf6-0afce619544a
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: LZMUMv5_h_JaR0zVXlQ2XKrkEt_WHxsG5ARJvN7fyAk
+id: zurb_clean_blog_local_tasks
+theme: zurb_clean_blog
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

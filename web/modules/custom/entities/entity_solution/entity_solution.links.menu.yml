@@ -1,0 +1,24 @@
+
+# Entity solution menu items definition
+entity.entity_solution.collection:
+  title: 'Solution'
+  route_name: entity.entity_solution.collection
+  description: 'List Entity solution entities'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Entity solution type menu items definition
+entity.entity_solution_type.collection:
+  title: 'Solution'
+  route_name: entity.entity_solution_type.collection
+  description: 'List Entity solution type (bundles)'
+  parent: admin_content.types
+  weight: 99
+
+
+user.page:
+  title: ''
+  weight: -10
+  route_name: user.page
+  menu_name: solution_add

@@ -1,0 +1,22 @@
+uuid: 573d82d1-b82a-4e38-b67f-da79d7ef30d8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: vPkjq_iAl3E9hoRzSwDim7ulvzWxnVberLz-slVHge8
+id: zurb_clean_blog_powered
+theme: zurb_clean_blog
+region: logo
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

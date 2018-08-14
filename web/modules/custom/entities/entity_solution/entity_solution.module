@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_solution.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_solution_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_solution module.
+    case 'help.page.entity_solution':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity Solution') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entity_solution_theme() {
+  $theme = [];
+  $theme['entity_solution'] = [
+    'render element' => 'elements',
+    'file' => 'entity_solution.page.inc',
+    'template' => 'entity_solution',
+  ];
+  $theme['entity_solution_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_solution.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function entity_solution_theme_suggestions_entity_solution(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_solution'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_solution__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_solution__' . $entity->bundle();
+  $suggestions[] = 'entity_solution__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_solution__' . $entity->id();
+  $suggestions[] = 'entity_solution__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function entity_solution_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'entity_solution') {
+    $fields['to_order'] = BaseFieldDefinition::create('solution_order_button')
+      ->setLabel(t('To order'))
+      ->setTranslatable(TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setClass('\Drupal\entity_solution\Plugin\Field\FieldType\SolutionOrderButtonItemList')
+      ->setComputed(TRUE);
+
+    return $fields;
+  }
+}

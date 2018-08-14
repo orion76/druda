@@ -1,0 +1,14 @@
+{
+  "name": "drupal/druda_common",
+  "type": "drupal-module",
+  "description": "Druda common functional",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/druda_common",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/druda_common",
+    "source": "http://cgit.drupalcode.org/druda_common"
+  },
+  "require": { }
+}

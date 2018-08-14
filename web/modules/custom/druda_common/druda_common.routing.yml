@@ -1,0 +1,8 @@
+
+druda_common.pages_controller.front:
+  path: '/front-page'
+  defaults:
+    _controller: '\Drupal\druda_common\Controller\PagesController::Front'
+    _title: 'Front'
+  requirements:
+    _permission: 'access content'

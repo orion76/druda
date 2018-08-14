@@ -1,0 +1,18 @@
+
+# Entity order menu items definition
+entity.entity_order.collection:
+  title: 'Order'
+  route_name: entity.entity_order.collection
+  description: 'List Entity order entities'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Entity order type menu items definition
+entity.entity_order_type.collection:
+  title: 'Order'
+  route_name: entity.entity_order_type.collection
+  description: 'List Entity order type (bundles)'
+  parent: admin_content.types
+  weight: 99
+

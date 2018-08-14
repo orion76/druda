@@ -1,0 +1,30 @@
+# Entity price routing definition
+
+entity.entity_price.canonical:
+  route_name: entity.entity_price.canonical
+  base_route: entity.entity_price.canonical
+  title: 'View'
+
+entity.entity_price.edit_form:
+  route_name: entity.entity_price.edit_form
+  base_route: entity.entity_price.canonical
+  title: 'Edit'
+
+entity.entity_price.version_history:
+  route_name: entity.entity_price.version_history
+  base_route: entity.entity_price.canonical
+  title: 'Revisions'
+
+entity.entity_price.delete_form:
+  route_name:  entity.entity_price.delete_form
+  base_route:  entity.entity_price.canonical
+  title: Delete
+  weight: 10
+
+# entity.entity_price_type.edit_form
+# /admin/structure/type-custom/entity_price_type/{entity_price_type}/edit
+
+entity.entity_price_type.edit_form:
+   route_name: entity.entity_price_type.edit_form
+   base_route: entity.entity_price_type.edit_form
+   title: 'Edit'

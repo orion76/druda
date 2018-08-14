@@ -1,0 +1,11 @@
+entity.entity_price.add_form:
+  route_name: entity.entity_price.add_page
+  title: 'Add Entity price'
+  appears_on:
+    - entity.entity_price.collection
+entity.entity_price_type.add_form:
+  route_name: entity.entity_price_type.add_form
+  title: 'Add Entity price type'
+  appears_on:
+    - entity.entity_price_type.collection
+

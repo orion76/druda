@@ -1,0 +1,5 @@
+name: 'druda_fields'
+type: module
+description: 'DruDa fields collection'
+core: 8.x
+package: 'druda'

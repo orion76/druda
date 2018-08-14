@@ -1,0 +1,24 @@
+uuid: b2cd5bec-d266-47b6-a4dd-bb3060190fe6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.add-solution
+  module:
+    - system
+  theme:
+    - zurb_foundation
+id: zurb_foundation_addsolution
+theme: zurb_foundation
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:add-solution'
+settings:
+  id: 'system_menu_block:add-solution'
+  label: 'Добавить решение'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

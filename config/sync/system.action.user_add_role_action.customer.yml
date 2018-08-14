@@ -1,0 +1,14 @@
+uuid: b8583466-181a-4bd8-936d-dff776707525
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.customer
+  module:
+    - user
+id: user_add_role_action.customer
+label: 'Add the Заказчик role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: customer

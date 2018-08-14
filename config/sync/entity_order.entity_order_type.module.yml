@@ -1,0 +1,6 @@
+uuid: bca2515f-02fd-41a9-a461-e3f26fb71f31
+langcode: ru
+status: true
+dependencies: {  }
+id: module
+label: Модуль

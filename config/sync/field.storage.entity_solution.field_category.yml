@@ -1,0 +1,20 @@
+uuid: 7052afe6-225c-4b6f-8323-411b5934513a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_solution
+    - taxonomy
+id: entity_solution.field_category
+field_name: field_category
+entity_type: entity_solution
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

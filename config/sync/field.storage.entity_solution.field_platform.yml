@@ -1,0 +1,20 @@
+uuid: ad72190c-48cc-48cb-9637-d2288ee64150
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_solution
+    - taxonomy
+id: entity_solution.field_platform
+field_name: field_platform
+entity_type: entity_solution
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

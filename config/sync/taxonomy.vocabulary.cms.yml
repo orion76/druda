@@ -1,0 +1,9 @@
+uuid: 3256d7f8-3c26-4eea-9e88-ca71d6942504
+langcode: ru
+status: true
+dependencies: {  }
+name: CMS
+vid: cms
+description: ''
+hierarchy: 1
+weight: 0

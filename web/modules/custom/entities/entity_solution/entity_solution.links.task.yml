@@ -1,0 +1,30 @@
+# Entity solution routing definition
+
+entity.entity_solution.canonical:
+  route_name: entity.entity_solution.canonical
+  base_route: entity.entity_solution.canonical
+  title: 'View'
+
+entity.entity_solution.edit_form:
+  route_name: entity.entity_solution.edit_form
+  base_route: entity.entity_solution.canonical
+  title: 'Edit'
+
+entity.entity_solution.version_history:
+  route_name: entity.entity_solution.version_history
+  base_route: entity.entity_solution.canonical
+  title: 'Revisions'
+
+entity.entity_solution.delete_form:
+  route_name:  entity.entity_solution.delete_form
+  base_route:  entity.entity_solution.canonical
+  title: Delete
+  weight: 10
+
+#entity.entity_solution_type.edit_form
+#/admin/structure/entity_solution_type/{entity_solution_type}/edit
+
+entity.entity_solution_type.edit_form:
+  route_name: entity.entity_solution_type.edit_form
+  base_route: entity.entity_solution_type.edit_form
+  title: 'Edit'

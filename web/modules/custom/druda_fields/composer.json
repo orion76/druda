@@ -1,0 +1,14 @@
+{
+  "name": "drupal/druda_fields",
+  "type": "drupal-module",
+  "description": "DruDa fields collection",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/druda_fields",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/druda_fields",
+    "source": "http://cgit.drupalcode.org/druda_fields"
+  },
+  "require": { }
+}

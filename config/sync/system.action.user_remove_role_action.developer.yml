@@ -1,0 +1,14 @@
+uuid: c08d836e-a58b-4911-a332-3b96120ec208
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.developer
+  module:
+    - user
+id: user_remove_role_action.developer
+label: 'Remove the Разработчик role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: developer

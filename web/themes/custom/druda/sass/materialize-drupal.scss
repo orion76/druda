@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+// Colors
+// Color
+@import "vendor/components/color-variables";
+@import "vendor/components/color-classes";
+
+// Variables;
+@import "variables";
+
+// Reset
+@import "vendor/components/normalize";
+
+// components
+
+@import "vendor/components/global";
+@import "vendor/components/badges";
+@import "vendor/components/icons-material-design";
+// Set the $use-flexbox-grid variable to false and uncomment the following line
+// if you want to use the original grid comes with Materialize CSS
+// @import "vendor/components/grid";
+@import "vendor/components/navbar";
+@import "vendor/components/typography";
+@import "vendor/components/transitions";
+@import "vendor/components/cards";
+//@import "vendor/components/toast";
+@import "vendor/components/tabs";
+@import "vendor/components/tooltip";
+@import "vendor/components/buttons";
+//@import "vendor/components/dropdown";
+@import "overrides/waves";
+@import "vendor/components/modal";
+@import "vendor/components/collapsible";
+@import "vendor/components/chips";
+@import "vendor/components/materialbox";
+//@import "vendor/components/forms/forms";
+@import "vendor/components/table_of_contents";
+@import "vendor/components/sidenav";
+@import "vendor/components/preloader";
+//@import "vendor/components/slider";
+//@import "vendor/components/carousel";
+@import "vendor/components/tapTarget";
+@import "vendor/components/pulse";
+// @import "vendor/components/datepicker";
+// @import "vendor/components/timepicker";

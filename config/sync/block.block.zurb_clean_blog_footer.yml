@@ -1,0 +1,26 @@
+uuid: 42842761-46e7-4242-8ee1-fe7793176f98
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: ReHZRQXkcB5rHK3akioEU2S1BnEbIWWNw1el-YLJpz8
+id: zurb_clean_blog_footer
+theme: zurb_clean_blog
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

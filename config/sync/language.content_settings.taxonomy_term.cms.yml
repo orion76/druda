@@ -1,0 +1,11 @@
+uuid: ce449e08-a9be-43da-8258-c80f37d317b0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cms
+id: taxonomy_term.cms
+target_entity_type_id: taxonomy_term
+target_bundle: cms
+default_langcode: site_default
+language_alterable: false

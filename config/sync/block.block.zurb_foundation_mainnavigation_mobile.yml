@@ -1,0 +1,26 @@
+uuid: 1ca20a4a-a07b-4799-b9cd-0e009d1a4287
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: 8Kb_xxgvAibzybAm7zN9KUDu78Dc2na_PivdxjzaIh4
+id: zurb_foundation_mainnavigation_mobile
+theme: zurb_foundation
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

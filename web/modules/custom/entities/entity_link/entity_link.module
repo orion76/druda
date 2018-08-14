@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_link.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_link_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_link module.
+    case 'help.page.entity_link':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity Link') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entity_link_theme() {
+  $theme = [];
+  $theme['entity_link'] = [
+    'render element' => 'elements',
+    'file' => 'entity_link.page.inc',
+    'template' => 'entity_link',
+  ];
+  $theme['entity_link_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_link.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function entity_link_theme_suggestions_entity_link(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_link'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_link__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_link__' . $entity->bundle();
+  $suggestions[] = 'entity_link__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_link__' . $entity->id();
+  $suggestions[] = 'entity_link__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

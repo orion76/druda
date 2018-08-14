@@ -1,0 +1,30 @@
+add entity link entities:
+  title: 'Create new Entity link entities'
+
+administer entity link entities:
+  title: 'Administer Entity link entities'
+  description: 'Allow to access the administration form to configure Entity link entities.'
+  restrict access: true
+
+delete entity link entities:
+  title: 'Delete Entity link entities'
+
+edit entity link entities:
+  title: 'Edit Entity link entities'
+
+view published entity link entities:
+  title: 'View published Entity link entities'
+
+view unpublished entity link entities:
+  title: 'View unpublished Entity link entities'
+
+view all entity link revisions:
+  title: 'View all Entity link revisions'
+
+revert all entity link revisions:
+  title: 'Revert all Entity link revisions'
+  description: 'Role requires permission <em>view Entity link revisions</em> and <em>edit rights</em> for entity link entities in question or <em>administer entity link entities</em>.'
+
+delete all entity link revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity link revisions</em> and <em>delete rights</em> for entity link entities in question or <em>administer entity link entities</em>.'

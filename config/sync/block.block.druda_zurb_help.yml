@@ -1,0 +1,22 @@
+uuid: 29150530-f0bb-49ea-a6ee-56295bb5f90b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: Y5Dl_REilZz8sNWuOp1RFozf9hq39XHgWh-VZtf0-8s
+id: druda_zurb_help
+theme: druda_zurb
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

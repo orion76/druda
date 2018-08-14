@@ -1,0 +1,18 @@
+
+# Entity link menu items definition
+entity.entity_link.collection:
+  title: 'Link'
+  route_name: entity.entity_link.collection
+  description: 'List Entity link entities'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Entity link type menu items definition
+entity.entity_link_type.collection:
+  title: 'Link'
+  route_name: entity.entity_link_type.collection
+  description: 'List Entity link type (bundles)'
+  parent: admin_content.types
+  weight: 99
+

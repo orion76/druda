@@ -1,0 +1,11 @@
+entity.entity_link.add_form:
+  route_name: entity.entity_link.add_page
+  title: 'Add Entity link'
+  appears_on:
+    - entity.entity_link.collection
+entity.entity_link_type.add_form:
+  route_name: entity.entity_link_type.add_form
+  title: 'Add Entity link type'
+  appears_on:
+    - entity.entity_link_type.collection
+

@@ -1,0 +1,63 @@
+# Entity order routing definition
+
+entity.entity_order.canonical:
+  route_name: entity.entity_order.canonical
+  base_route: entity.entity_order.canonical
+  title: 'View'
+
+entity.entity_order.edit_form:
+  route_name: entity.entity_order.edit_form
+  base_route: entity.entity_order.canonical
+  title: 'Edit'
+
+entity.entity_order.version_history:
+  route_name: entity.entity_order.version_history
+  base_route: entity.entity_order.canonical
+  title: 'Revisions'
+
+entity.entity_order.delete_form:
+  route_name:  entity.entity_order.delete_form
+  base_route:  entity.entity_order.canonical
+  title: Delete
+  weight: 10
+
+# Отображение формы
+
+#entity.entity_order_type.edit_form
+#/admin/structure/entity_order_type/{entity_order_type}/edit
+
+entity.entity_order_type.edit_form:
+  route_name: entity.entity_order_type.edit_form
+  base_route: entity.entity_order_type.edit_form
+  title: 'Edit'
+
+
+#entity.entity_order.field_ui_fields
+#/admin/structure/entity_order_type/{entity_order_type}/edit/fields
+
+
+
+#entity.entity_order.field_ui_fields:
+#  route_name: entity.entity_order.field_ui_fields
+#  base_route: entity.entity_order_type.edit_form
+#  title: 'Fields'
+
+#entity.entity_form_display.entity_order.form_mode
+#/admin/structure/entity_order_type/{entity_order_type}/edit/form-display/{form_mode_name}
+
+
+#entity.entity_form_display.entity_order.form_mode:
+#  route_name: entity.entity_form_display.entity_order.form_mode
+#  base_route: entity.entity_order_type.edit_form
+#  title: 'Form'
+
+#entity.entity_view_display.entity_order.view_mode
+#/admin/structure/entity_order_type/{entity_order_type}/edit/display/{view_mode_name}
+
+
+#entity.entity_view_display.entity_order.view_mode:
+#  route_name: entity.entity_view_display.entity_order.view_mode
+#  base_route: entity.entity_order_type.edit_form
+#  title: 'View'
+
+

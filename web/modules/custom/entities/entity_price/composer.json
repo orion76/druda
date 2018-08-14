@@ -1,0 +1,14 @@
+{
+  "name": "drupal/entity_price",
+  "type": "drupal-module",
+  "description": "Entity Price",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/entity_price",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/entity_price",
+    "source": "http://cgit.drupalcode.org/entity_price"
+  },
+  "require": { }
+}

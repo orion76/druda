@@ -1,0 +1,8 @@
+uuid: d0a23693-bb28-421a-ae5e-28215a2db139
+langcode: ru
+status: true
+dependencies: {  }
+id: user-register
+label: 'User register'
+description: 'User register'
+locked: false

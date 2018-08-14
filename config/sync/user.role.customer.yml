@@ -1,0 +1,9 @@
+uuid: 79203efd-dfd3-4995-a103-81cd81281203
+langcode: ru
+status: true
+dependencies: {  }
+id: customer
+label: Заказчик
+weight: 4
+is_admin: null
+permissions: {  }

@@ -1,0 +1,5 @@
+name: 'entity_solution'
+type: module
+description: 'Entity Solution'
+core: 8.x
+package: 'gpb'

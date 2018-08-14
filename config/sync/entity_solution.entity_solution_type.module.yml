@@ -1,0 +1,6 @@
+uuid: c8cf8c66-9157-47d3-8cc2-333ef424371c
+langcode: ru
+status: true
+dependencies: {  }
+id: module
+label: Модуль

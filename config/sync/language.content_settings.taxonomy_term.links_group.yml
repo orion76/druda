@@ -1,0 +1,11 @@
+uuid: 3d007cf9-c69f-46e0-af16-40fb70c18dfe
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.links_group
+id: taxonomy_term.links_group
+target_entity_type_id: taxonomy_term
+target_bundle: links_group
+default_langcode: site_default
+language_alterable: false

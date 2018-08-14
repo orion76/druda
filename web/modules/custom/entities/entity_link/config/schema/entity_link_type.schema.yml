@@ -1,0 +1,12 @@
+entity_link.entity_link_type.*:
+  type: config_entity
+  label: 'Entity link type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

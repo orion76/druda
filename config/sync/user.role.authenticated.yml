@@ -1,0 +1,22 @@
+uuid: afd313b6-aa08-4fd9-8418-130a5508327b
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Аутентифицированный пользователь'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'solution order'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view profile'

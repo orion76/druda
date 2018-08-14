@@ -1,0 +1,37 @@
+label: Views
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        label:
+          label: 'View Name'
+        description:
+          label: Description
+        tag:
+          label: Tag
+        operation:
+          label: Operations
+      title: Views
+  block_1:
+    display_title: 'Disabled views'
+    display_options:
+      header:
+        area_text_custom:
+          admin_label: 'Title - Disabled'
+          content: '<h3> Disabled </h3>'
+  page_1:
+    display_title: 'Enabled views'
+    display_options:
+      title: Views
+      header:
+        area_text_custom:
+          admin_label: 'Title - Enabled'
+          content: '<h3> Enabled </h3>'

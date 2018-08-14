@@ -1,0 +1,11 @@
+uuid: 3f3a36f9-6939-4942-b941-6fb38b4f3ecc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.catalog
+id: taxonomy_term.catalog
+target_entity_type_id: taxonomy_term
+target_bundle: catalog
+default_langcode: site_default
+language_alterable: false

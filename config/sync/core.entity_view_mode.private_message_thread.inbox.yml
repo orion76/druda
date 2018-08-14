@@ -1,0 +1,12 @@
+uuid: 8b951a14-5eb9-4008-af63-4b78d3b63e77
+langcode: ru
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: oFIXnx5sHjxyZL1448nGFA3zxzF4MKDrqpuMkJaXAFc
+id: private_message_thread.inbox
+label: Входящие
+targetEntityType: private_message_thread
+cache: true

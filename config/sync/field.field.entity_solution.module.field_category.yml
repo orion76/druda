@@ -1,0 +1,29 @@
+uuid: a6d73c40-bf18-4564-98de-f10136d81366
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_solution.entity_solution_type.module
+    - field.storage.entity_solution.field_category
+    - taxonomy.vocabulary.catalog
+id: entity_solution.module.field_category
+field_name: field_category
+entity_type: entity_solution
+bundle: module
+label: Категория
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      catalog: catalog
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

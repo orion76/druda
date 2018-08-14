@@ -1,0 +1,22 @@
+uuid: 318e4afe-bcc0-45b7-b2ef-e988967b2e98
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: isGuEYpuAhwrfyFvgppHsg76EUqXsB13b56L_uveqpE
+id: druda_zurb_messages
+theme: druda_zurb
+region: content
+weight: -40
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

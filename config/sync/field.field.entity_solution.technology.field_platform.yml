@@ -1,0 +1,29 @@
+uuid: 74211dfa-5d7e-4391-9760-228284b377b0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_solution.entity_solution_type.technology
+    - field.storage.entity_solution.field_platform
+    - taxonomy.vocabulary.cms
+id: entity_solution.technology.field_platform
+field_name: field_platform
+entity_type: entity_solution
+bundle: technology
+label: Платформа
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cms: cms
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

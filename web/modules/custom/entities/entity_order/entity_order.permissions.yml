@@ -1,0 +1,30 @@
+add entity order entities:
+  title: 'Create new Entity order entities'
+
+administer entity order entities:
+  title: 'Administer Entity order entities'
+  description: 'Allow to access the administration form to configure Entity order entities.'
+  restrict access: true
+
+delete entity order entities:
+  title: 'Delete Entity order entities'
+
+edit entity order entities:
+  title: 'Edit Entity order entities'
+
+view published entity order entities:
+  title: 'View published Entity order entities'
+
+view unpublished entity order entities:
+  title: 'View unpublished Entity order entities'
+
+view all entity order revisions:
+  title: 'View all Entity order revisions'
+
+revert all entity order revisions:
+  title: 'Revert all Entity order revisions'
+  description: 'Role requires permission <em>view Entity order revisions</em> and <em>edit rights</em> for entity order entities in question or <em>administer entity order entities</em>.'
+
+delete all entity order revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity order revisions</em> and <em>delete rights</em> for entity order entities in question or <em>administer entity order entities</em>.'

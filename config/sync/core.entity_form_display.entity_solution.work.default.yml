@@ -1,0 +1,51 @@
+uuid: 1aba0774-d135-487c-8559-75866428c2e3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_solution.entity_solution_type.work
+    - field.field.entity_solution.work.field_category
+    - field.field.entity_solution.work.field_platform
+  module:
+    - shs
+id: entity_solution.work.default
+targetEntityType: entity_solution
+bundle: work
+mode: default
+content:
+  field_category:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_platform:
+    weight: 2
+    settings:
+      force_deepest: '1'
+      create_new_items: false
+      create_new_levels: false
+      display_node_count: false
+    third_party_settings: {  }
+    type: options_shs
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

@@ -1,0 +1,16 @@
+uuid: b017bd81-ee8b-4563-b6fe-f78c823ff736
+langcode: ru
+status: true
+dependencies: {  }
+id: customer
+label: Заказчик
+registration: true
+multiple: false
+roles:
+  customer: customer
+  authenticated: '0'
+  administrator: '0'
+  developer: '0'
+weight: 0
+use_revisions: true
+description: ''

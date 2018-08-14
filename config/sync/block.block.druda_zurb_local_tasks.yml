@@ -1,0 +1,22 @@
+uuid: cbaada0e-22ef-4f2e-b9e3-dedf3556f102
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: LZMUMv5_h_JaR0zVXlQ2XKrkEt_WHxsG5ARJvN7fyAk
+id: druda_zurb_local_tasks
+theme: druda_zurb
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

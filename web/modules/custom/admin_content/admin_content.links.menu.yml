@@ -1,0 +1,15 @@
+
+# Entity order menu items definition
+admin_content.types:
+  title: 'Content custom'
+  route_name: admin_content.types
+  description: 'Content custom'
+  parent: system.admin_structure
+  weight: 100
+
+admin_content.types_content:
+  title: 'Content custom'
+  route_name: admin_content.types_content
+  description: 'Content custom'
+  parent: system.admin_content
+  weight: 100

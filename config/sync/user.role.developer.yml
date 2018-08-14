@@ -1,0 +1,11 @@
+uuid: 50598e5a-5a9b-4663-833f-f407b160251b
+langcode: ru
+status: true
+dependencies: {  }
+id: developer
+label: Разработчик
+weight: 3
+is_admin: null
+permissions:
+  - 'create developer profile'
+  - 'update own developer profile'

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains druda_common.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function druda_common_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the druda_common module.
+    case 'help.page.druda_common':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Druda common functional') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,26 @@
+uuid: 40a5373e-bd9e-4803-9eb8-c68d686680f0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: Sdr9zd4ycP5FtpLrcpxj4gyn0eTXxypVXzhALpDEH08
+id: zurb_clean_blog_useraccountmenu_mobile
+theme: zurb_clean_blog
+region: logo
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,16 @@
+
+admin_content.types:
+  path: '/admin/structure/content-types'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesPage'
+    _title: 'Custom types'
+  requirements:
+    _permission: 'access content'
+
+admin_content.types_content:
+  path: '/admin/content/content-types'
+  defaults:
+    _controller: '\Drupal\admin_content\Controller\AdminContentController::TypesContentPage'
+    _title: 'Custom types'
+  requirements:
+    _permission: 'access content'

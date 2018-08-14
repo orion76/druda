@@ -1,0 +1,29 @@
+uuid: e526553e-7c5f-4f1e-8d83-9a7cbd306c64
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_solution.entity_solution_type.technology
+    - field.storage.entity_solution.field_category
+    - taxonomy.vocabulary.catalog
+id: entity_solution.technology.field_category
+field_name: field_category
+entity_type: entity_solution
+bundle: technology
+label: Категория
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      catalog: catalog
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

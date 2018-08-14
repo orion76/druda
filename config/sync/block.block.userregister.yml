@@ -1,0 +1,32 @@
+uuid: d4d30779-6670-436b-82bd-f3bed974279c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.user-register
+  module:
+    - system
+    - user
+  theme:
+    - druda_zurb
+id: userregister
+theme: druda_zurb
+region: meta_header_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:user-register'
+settings:
+  id: 'system_menu_block:user-register'
+  label: 'User register'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

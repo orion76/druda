@@ -1,0 +1,40 @@
+uuid: 9e9a3e8d-bad0-4436-b949-62013f312af7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_order.entity_order_type.module
+  module:
+    - user
+id: entity_order.module.default
+targetEntityType: entity_order
+bundle: module
+mode: default
+content:
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  order_product:
+    label: hidden
+    type: entity_reference_entity_view
+    region: content
+    weight: 0
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  to_order: true

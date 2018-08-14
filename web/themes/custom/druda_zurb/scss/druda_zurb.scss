@@ -1,0 +1,175 @@
+// =========
+// This file is a custom file that loads all files. Each non-base layer
+// can be disabled.
+//
+// Do not name this file "druda_zurb.scss". This file should be named
+// THEMENAME.scss.
+//
+// This application file (THEMENAME.scss) is where all the partials are
+// imported.
+//
+// Theme styles are categorized using SMACSS standards. They utilize
+// categorization of styles into various categories. Those categories are the
+// following:
+//
+// - Base: CSS reset/normalize plus HTML element styling.
+// - Layout: Macro arrangement of a web page, including any grid systems.
+// - Modules: Dictate minor layout modules or reusable elements.
+// - States: Describe the appearance of a module in various states.
+// - Theme: Specific customizations for your subtheme.
+// For more information about this new Drupal css file standard, please review
+// the following:
+// - https://drupal.org/node/1887922
+// - http://smacss.com/
+// =========
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&subset=cyrillic,cyrillic-ext');
+// Make sure the charset is set appropriately
+@charset 'utf-8';
+
+//This is your _settings.scss file where you can override foundation variables.
+@import 'settings';
+// Core
+// The following imports bootstrap the theme.
+@import './foundation';
+@import 'motion-ui';
+
+// Set flex to true to enable the new Foundation 6 flex grid.
+
+@include foundation-everything($flex);
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+//@include foundation-flex-classes;
+//@include foundation-flex-grid;
+
+// Components
+
+// Import our mixins early so they can be used by other partials.
+// Optional.
+//@import 'base/mixins';
+
+// Common file is where you place common utility classes to extend or
+// parametrics.
+// Optional.
+// @import 'base/common';
+
+// Drupal specific styles (to fix Drupalisms).
+@import 'base/drupal';
+
+// Styling for elements.
+// Optional.
+// @import 'base/elements';
+
+// Layout
+// Each section of the document has it's own partial seperated out to improve
+// developer experience. Additionally, grids can be declared in layouts as well.
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/aside';
+@import 'layout/footer';
+
+// Modules
+// @import 'modules/block';
+// @import 'modules/button';
+
+// States
+// @import 'states/collapse';
+
+// Themes
+// @import 'theme/button-light';
+
+// Older IE support
+// @import 'vendor/ie';
+
+.sidebar {
+
+  .menu {
+    display: block;
+
+    & > li {
+      display: block;
+      flex: none;
+    }
+  }
+}
+
+//.field-label-inline{
+//  @include :
+//}
+
+.field-item {
+  h2 {
+    margin: 0;
+  }
+}
+
+.solution-card {
+  .card-divider {
+    border-bottom: 3px solid $medium-gray;
+  }
+  .solution-info {
+    padding: 10px;
+    background: $medium-gray;
+  }
+  .field-wrapper {
+    &.field-label-inline {
+      display: flex;
+
+      .field-label {
+        flex: 1 1 25%;
+      }
+      .field-items {
+        flex: 2 2 75%;
+
+        .field-item {
+          padding: 0 0 0 1.5em;
+          border-bottom: 1px solid $medium-gray;
+        }
+      }
+    }
+  }
+}
+
+.top-bar {
+  a {
+    color: $palette-1-light
+  }
+  .dropdown {
+    &.menu {
+      a {
+        background-color: $palette-1;
+      }
+    }
+  }
+}
+
+.sidebar-first {
+  @include flex-order($sidebar-first-order)
+}
+
+.sidebar-second {
+  @include flex-order($sidebar-second-order)
+}
+
+.js-form-type-entity-autocomplete {
+  max-width: 50%;
+}
+
+.form-item {
+  label {
+    font-weight: 700;
+  }
+  .description {
+    font-size: $font-size-small;
+    color: $dark-gray;
+  }
+  .input{
+    margin: 6px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .title-bar {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+uuid: 3813e84c-380f-44c4-9849-f45722558357
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.developer
+  module:
+    - user
+id: user_add_role_action.developer
+label: 'Add the Разработчик role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: developer

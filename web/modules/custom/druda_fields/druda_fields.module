@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains druda_fields.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function druda_fields_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the druda_fields module.
+    case 'help.page.druda_fields':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('DruDa fields collection') . '</p>';
+      return $output;
+
+    default:
+  }
+}

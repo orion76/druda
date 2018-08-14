@@ -1,0 +1,26 @@
+uuid: 29a0ec76-ae73-4310-b004-78c65d7d1e32
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: lHQBKDgIFO91nMDDR0p3_KnUMCcZ9DdxN8g6bUv5mYw
+id: zurb_foundation_tools
+theme: zurb_foundation
+region: header
+weight: 50
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

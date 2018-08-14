@@ -1,0 +1,30 @@
+add entity price entities:
+  title: 'Create new Entity price entities'
+
+administer entity price entities:
+  title: 'Administer Entity price entities'
+  description: 'Allow to access the administration form to configure Entity price entities.'
+  restrict access: true
+
+delete entity price entities:
+  title: 'Delete Entity price entities'
+
+edit entity price entities:
+  title: 'Edit Entity price entities'
+
+view published entity price entities:
+  title: 'View published Entity price entities'
+
+view unpublished entity price entities:
+  title: 'View unpublished Entity price entities'
+
+view all entity price revisions:
+  title: 'View all Entity price revisions'
+
+revert all entity price revisions:
+  title: 'Revert all Entity price revisions'
+  description: 'Role requires permission <em>view Entity price revisions</em> and <em>edit rights</em> for entity price entities in question or <em>administer entity price entities</em>.'
+
+delete all entity price revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity price revisions</em> and <em>delete rights</em> for entity price entities in question or <em>administer entity price entities</em>.'

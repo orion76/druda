@@ -1,0 +1,25 @@
+uuid: 58b7b9fe-da0c-478b-8795-dd271fa6f739
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: 4DGn0vEBZqkVjmUusIoEXPs2C1CFDS5xJWBICaKobcw
+id: druda_zurb_branding
+theme: druda_zurb
+region: meta_header_left
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

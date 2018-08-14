@@ -1,0 +1,11 @@
+entity.entity_solution.add_form:
+  route_name: entity.entity_solution.add_page
+  title: 'Add solution'
+  appears_on:
+    - entity.entity_solution.collection
+entity.entity_solution_type.add_form:
+  route_name: entity.entity_solution_type.add_form
+  title: 'Add Entity solution type'
+  appears_on:
+    - entity.entity_solution_type.collection
+

@@ -1,0 +1,5 @@
+langcode: en
+status: true
+id: solution_add
+label: 'Add solution'
+description: 'Add solutions links'

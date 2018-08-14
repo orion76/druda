@@ -1,0 +1,26 @@
+uuid: 584e3da0-3b26-4fb9-8892-1681a14e40e9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: lHQBKDgIFO91nMDDR0p3_KnUMCcZ9DdxN8g6bUv5mYw
+id: zurb_clean_blog_tools
+theme: zurb_clean_blog
+region: logo
+weight: 50
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 37b08f30-55c5-40cb-af3a-d4d62671f76d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: jdJ4TA7CdHZbyMLw03KUa8N4Bjmnm6oDrRg--OEA4xY
+id: druda_zurb_breadcrumbs
+theme: druda_zurb
+region: content
+weight: -50
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

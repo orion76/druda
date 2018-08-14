@@ -1,0 +1,10 @@
+uuid: caeb2780-7f93-4277-94da-6e8a8c521dc9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_solution
+id: entity_solution.teaser
+label: Teaser
+targetEntityType: entity_solution
+cache: true

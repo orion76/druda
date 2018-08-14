@@ -1,0 +1,8 @@
+uuid: 988b35ff-a639-4884-9ea7-22ff4ba57a16
+langcode: ru
+status: true
+dependencies: {  }
+id: add-solution
+label: 'Add solution'
+description: ''
+locked: false

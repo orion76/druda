@@ -1,0 +1,48 @@
+uuid: 1f3d59e1-6454-4768-8b3d-a95000511bf2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_solution.entity_solution_type.technology
+    - field.field.entity_solution.technology.field_category
+    - field.field.entity_solution.technology.field_platform
+  module:
+    - user
+id: entity_solution.technology.default
+targetEntityType: entity_solution
+bundle: technology
+mode: default
+content:
+  field_category:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_platform:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

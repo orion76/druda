@@ -1,0 +1,20 @@
+uuid: 47c7cc52-1b5a-4aa2-9119-8f2bbfe2eb42
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: U3ZS01t8tDBVaOom6-d16dnMZEwe21EfN2X4Y5N25hM
+id: druda_zurb_local_actions
+theme: druda_zurb
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

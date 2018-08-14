@@ -1,0 +1,14 @@
+uuid: 91bab9c4-a292-4855-b3e3-a5cb0667993b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - user.role.customer
+  module:
+    - user
+id: user_remove_role_action.customer
+label: 'Remove the Заказчик role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: customer

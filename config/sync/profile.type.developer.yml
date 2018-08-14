@@ -1,0 +1,16 @@
+uuid: 2593090d-a0e5-4ef0-9be3-d4e63a307dc1
+langcode: ru
+status: true
+dependencies: {  }
+id: developer
+label: Разработчик
+registration: true
+multiple: false
+roles:
+  developer: developer
+  authenticated: '0'
+  administrator: '0'
+  customer: '0'
+weight: 0
+use_revisions: true
+description: ''

@@ -1,0 +1,5 @@
+name: 'entity_order'
+type: module
+description: 'Entity Order'
+core: 8.x
+package: 'gpb'

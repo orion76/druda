@@ -1,0 +1,9 @@
+uuid: f189bf5d-6e5f-428f-bad0-8c02046f64f8
+langcode: ru
+status: true
+dependencies: {  }
+name: Валюта
+vid: currency
+description: ''
+hierarchy: 0
+weight: 0

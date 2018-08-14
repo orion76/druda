@@ -1,0 +1,34 @@
+add entity solution entities:
+  title: 'Create new Entity solution entities'
+
+administer entity solution entities:
+  title: 'Administer Entity solution entities'
+  description: 'Allow to access the administration form to configure Entity solution entities.'
+  restrict access: true
+
+delete entity solution entities:
+  title: 'Delete Entity solution entities'
+
+edit entity solution entities:
+  title: 'Edit Entity solution entities'
+
+view published entity solution entities:
+  title: 'View published Entity solution entities'
+
+view unpublished entity solution entities:
+  title: 'View unpublished Entity solution entities'
+
+view all entity solution revisions:
+  title: 'View all Entity solution revisions'
+
+revert all entity solution revisions:
+  title: 'Revert all Entity solution revisions'
+  description: 'Role requires permission <em>view Entity solution revisions</em> and <em>edit rights</em> for entity solution entities in question or <em>administer entity solution entities</em>.'
+
+delete all entity solution revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Entity solution revisions</em> and <em>delete rights</em> for entity solution entities in question or <em>administer entity solution entities</em>.'
+
+solution order:
+  title: 'Solution order'
+  description: 'Allow access to order solution'

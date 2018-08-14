@@ -1,0 +1,20 @@
+uuid: 1cb16a7f-f08f-44df-b7fa-5c61598ee88a
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: HOswBp8YaCZyfqIAmL4xGIwfGBk0-VdxRvmKLzYaNUc
+id: druda_zurb_page_title
+theme: druda_zurb
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

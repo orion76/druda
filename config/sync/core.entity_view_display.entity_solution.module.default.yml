@@ -1,0 +1,76 @@
+uuid: fc9c0ab2-0574-453f-b16e-eacd9e8d8ecc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - entity_solution.entity_solution_type.module
+    - field.field.entity_solution.module.field_category
+    - field.field.entity_solution.module.field_description
+    - field.field.entity_solution.module.field_platform
+  module:
+    - druda_fields
+    - entity_solution
+    - field_formatter_class
+    - text
+id: entity_solution.module.default
+targetEntityType: entity_solution
+bundle: module
+mode: default
+content:
+  field_category:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_platform:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: title_formatter
+    weight: 1
+    region: content
+    settings:
+      html_tag: h2
+    third_party_settings: {  }
+  to_order:
+    type: solution_order_button
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      button_text: 'To order'
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+  user_id:
+    label: hidden
+    type: entity_reference_label
+    weight: 2
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  layout_builder__layout: true

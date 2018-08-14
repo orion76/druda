@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_order.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_order_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_order module.
+    case 'help.page.entity_order':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity Order') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entity_order_theme() {
+  $theme = [];
+  $theme['entity_order'] = [
+    'render element' => 'elements',
+    'file' => 'entity_order.page.inc',
+    'template' => 'entity_order',
+  ];
+  $theme['entity_order_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_order.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function entity_order_theme_suggestions_entity_order(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_order'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_order__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_order__' . $entity->bundle();
+  $suggestions[] = 'entity_order__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_order__' . $entity->id();
+  $suggestions[] = 'entity_order__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

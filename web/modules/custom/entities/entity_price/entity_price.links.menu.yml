@@ -1,0 +1,18 @@
+
+# Entity price menu items definition
+entity.entity_price.collection:
+  title: 'Price'
+  route_name: entity.entity_price.collection
+  description: 'List Entity price entities'
+  parent: admin_content.types_content
+  weight: 100
+
+
+# Entity price type menu items definition
+entity.entity_price_type.collection:
+  title: 'Price'
+  route_name: entity.entity_price_type.collection
+  description: 'List Entity price type (bundles)'
+  parent: admin_content.types
+  weight: 99
+

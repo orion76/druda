@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains entity_price.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function entity_price_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entity_price module.
+    case 'help.page.entity_price':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity Price') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entity_price_theme() {
+  $theme = [];
+  $theme['entity_price'] = [
+    'render element' => 'elements',
+    'file' => 'entity_price.page.inc',
+    'template' => 'entity_price',
+  ];
+  $theme['entity_price_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'entity_price.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function entity_price_theme_suggestions_entity_price(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#entity_price'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'entity_price__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_price__' . $entity->bundle();
+  $suggestions[] = 'entity_price__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'entity_price__' . $entity->id();
+  $suggestions[] = 'entity_price__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

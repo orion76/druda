@@ -1,0 +1,22 @@
+uuid: 73086587-de0b-4002-97cd-c43e5001fee7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: Y5Dl_REilZz8sNWuOp1RFozf9hq39XHgWh-VZtf0-8s
+id: zurb_clean_blog_help
+theme: zurb_clean_blog
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

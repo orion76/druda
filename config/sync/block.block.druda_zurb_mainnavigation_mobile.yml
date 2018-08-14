@@ -1,0 +1,26 @@
+uuid: 4badaeb3-63cd-46e5-b9d8-7faddad216c4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - druda_zurb
+_core:
+  default_config_hash: 8Kb_xxgvAibzybAm7zN9KUDu78Dc2na_PivdxjzaIh4
+id: druda_zurb_mainnavigation_mobile
+theme: druda_zurb
+region: meta_header_middle
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

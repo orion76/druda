@@ -1,0 +1,19 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'views_view_rss' -->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/views/views-view-rss.html.twig' -->
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://druda.ti-work.ru/ru/taxonomy/term/11" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Интернет-коммерция</title>
+    <link>http://druda.ti-work.ru/ru/taxonomy/term/11</link>
+    <description></description>
+    <language>ru</language>
+    
+    
+  </channel>
+</rss>
+
+<!-- END OUTPUT from 'core/themes/stable/templates/views/views-view-rss.html.twig' -->
+

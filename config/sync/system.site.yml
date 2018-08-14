@@ -1,0 +1,15 @@
+uuid: 35e4201c-3df5-465d-b7b4-d4f9a0f21109
+name: DruDa
+mail: gpb@yandex.ru
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /front-page
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ru
+default_langcode: ru
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: gpb@yandex.ru

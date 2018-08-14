@@ -1,0 +1,22 @@
+uuid: abc46084-44d6-4977-ad93-3e0a5a8b4075
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zurb_clean_blog
+_core:
+  default_config_hash: isGuEYpuAhwrfyFvgppHsg76EUqXsB13b56L_uveqpE
+id: zurb_clean_blog_messages
+theme: zurb_clean_blog
+region: content
+weight: -40
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
